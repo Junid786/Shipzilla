@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-1: #378FE9;
+    --color-2: #A1CDFD;
+    --color-3: #EEF5FB;
+    --color-4: #282828;
+    --color-5: #5F5F5F;
+    --color-6: rgba(239, 245, 251, 1);
+    --color-7: rgba(50, 50, 50, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+header {
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-3);
+    background-color: var(--color-1);
+}
+
+#main_logo {
+    height: 6vh;
+    margin-left: 20px;
+}
+
+#btn_login {
+    font-size: 100%;
+}
+
+.header_divs_2_tds {
+    text-align: center;
+    width: 33.3333%;
+    height: 7vh;
+}
+
+.header_divs_2_tds > a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+#btn_transport {
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+main {
+    padding-top: 10vh;
+    margin: 0 3%;
+    height: 100vh;
+}
+
+.main_inside {
+    height: 80vh;
+    display: flex;
+}
+
+.main_inside > aside {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: inherit;
+    color: var(--color-5);
+}
+
+
+.main_inside_inside {
+    width: 75%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_inside_inside_inside{
+    height: 75vh;
+    border: 2px rgba(237, 237, 237, 1) solid;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.links_inside{
+    float: right;
+}
+
+#header_divs_2 {
+    width: 20%;
+}
+
+@media (max-width:1000px) {
+    #header_divs_2 {
+        width: 40%;
+    }
+    .main_inside > aside {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:600px) {
+    #nav_inside_1 , #nav_inside_2, #nav_inside_3 {
+        font-size: 10px;
+    }
+    .main_inside > aside {
+        font-size: 10px;
+    }
+}
+
+#nav_inside_1 , #nav_inside_2, #nav_inside_3 {
+    font-size: 14px;
+}
+
+#rquotes_p {
+    color: var(--color-5);
+}
+
+.rquotes_2 {
+    min-height: 10vh;
+    max-height: 30vh;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 20px;
+}
+
+.rquotes_3 {
+    height: 20vh;
+    justify-content: space-between;
+    display: flex;
+    border: 2px solid rgb(205,205,205);
+    border-radius: 20px;
+}
+
+.rquotes_3_divs {
+    height: 20vh;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.rquotes_divs {
+    display: flex;
+    width: 250px;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+}
+
+.rquotes_divs_span {
+    margin: 10px 10px;
+    color: var(--color-3);
+    background-color: var(--color-1);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    border-radius: 20px;
+}
+
+.rquotes_divs_p{
+    width: 70%;
+    padding-top: 6px;
+    height: 10vh;
+    font-size: 11px;
+    text-align: center;
+    padding: 10% 0;
+}
+
+#rquotes_divs_p_2{
+    padding: 13% 0;
+}
+
+#rquotes_divs_p_3{
+    padding: 20% 0;
+}
+
+.rquotes_3_divs {
+    padding-left : 20px;
+    color: var(--color-5);
+}
+
+.rquotes_3_btn {
+    border: 1px solid var(--color-5);
+    border-radius: 10px;
+    background-color: white;
+    color: var(--color-5);
+    padding: 6px 15px;
+}
+
+#rquotes_3_divs_left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.rquotes_3_divs_2_1, .rquotes_3_divs_2_2 {
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main_inside_inside_inside > table {
+    width: 100%;
+    text-align: center;
+}
+
+.main_inside_inside_inside > table > tr {
+    height: 5vh;
+    font-size: 12px;
+    color: var(--color-5);
+    width: 100%;
+}
+
+
+.message_from {
+    width: 15%;
+    text-align: start;
+}
+
+.message_subject {
+    width: 70%;
+    text-align: center;
+}
+
+.message_Date {
+    width: 15%;
+}

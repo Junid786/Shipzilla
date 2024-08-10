@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Information</title>
+    <link rel="icon" href="../images/main_logo.png">
+    <link rel="stylesheet" href="styles/vechile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="../images/main_logo.png" alt="image not found" id="main_logo"></a>
+        <div class="header_divs" id="header_divs_2" style="width: 60%;">
+            <table style="width: 100%;">
+                <tr>
+                    <td class="header_divs_2_tds">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                id="btn_transport">Transport</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="vechile.html">Vehicle</a></li>
+                                <li><a class="dropdown-item" href="motorcycle.html">Motorcycle</a></li>
+                                <li><a class="dropdown-item" href="boat.html">Boat</a></li>
+                                <li><a class="dropdown-item" href="heavy.html">Heavy Equipment</a></li>
+                                <li><a class="dropdown-item" href="rv.html">RVs</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="header_divs_2_tds"><a href="listing.html">Listing</a></td>
+                    <td class="header_divs_2_tds"><a href="transporter.html">Transporter</a></td>
+                    <td class="header_divs_2_tds"><a href="faq.html">FAQs</a></td>
+                    <td class="header_divs_2_tds"><a href="contact.html">Contact Us</a></td>
+                    <td class="header_divs_2_tds"><a href="login.html" id="btn_login">Login</a></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main id="main">
+        <h1 id="main_heading">Motorcycle Information</h1>
+        <div class="car">
+            <input list="menu1" class="form-control" placeholder="Menu" name="carmenu_1">
+            <datalist id="menu1">
+                <option value="ISO-8859-1">ISO-8859-1</option>
+                <option value="cp1252">ANSI</option>
+                <option value="utf8">UTF-8</option>
+            </datalist>
+            <br>
+            <input list="model1" class="form-control" placeholder="Model" name="carmodal_1">
+            <datalist id="model1">
+                <option value="ISO-8859-1">ISO-8859-1</option>
+                <option value="cp1252">ANSI</option>
+                <option value="utf8">UTF-8</option>
+            </datalist>
+            <div class="form-check form-switch check_box">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck1"
+                    name="carcheck_1">&nbsp;
+                <label class="form-check-label" for="flexSwitchCheck1">Operable (Runs , Steers and Brakes)</label>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button" id="addanother"><i class="bi bi-plus"></i> Add
+                    anothervehicle</button>
+            </div>
+        </div>
+        <div id="new" class="new"></div>
+        <div class="other">
+            <p id="other_1">How would you like the vehicle moved?</p>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Transported (Open)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Transported (Close)
+                </label>
+            </div><br>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1" style="color: rgb(0, 173, 0);"><i class="bi bi-geo-alt-fill"></i></span>
+                <input type="text" class="form-control" placeholder="    Pickup Zip Code" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1" style="color: rgb(209, 0, 0);"><i class="bi bi-geo-alt-fill"></i></span>
+                <input type="text" class="form-control" placeholder="    Delivery Zip Code" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1" style="color: rgb(0, 0, 0);"><i class="bi bi-calendar3"></i></span>
+                <input type="text" class="form-control" placeholder="    Select Pickup" aria-label="Username"
+                    aria-describedby="basic-addon1" list="pickup">
+                    <datalist id="pickup" role="listbox" class="datalist_boat">
+                        <option value="Approximate date"></option>
+                        <option value="As Available"></option>
+                        <option value="Will Advise"></option>
+                    </datalist>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1" style="color: rgb(0, 0, 0);"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" placeholder="    Pickup Zip Code" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div><br>
+            <h6>By clicking submit, you certify that you have read and agreed to
+                our <a href="tac.html">Terms and Conditions</a></h6><br>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" type="button">Submit</button>
+                </div>
+        </div>
+    </main>
+    <script>
+        var add = document.getElementById('addanother');
+        let count = 2;
+        add.addEventListener("click", function () {
+            if (count < 6) {
+                const div = document.createElement('div');
+                div.classList.add("car");
+                const menu = document.createElement('input');
+                menu.classList.add("form-control");
+                menu.placeholder = "Menu"
+                let name = toString(count)
+                name = "carmenu_".concat(name)
+                menu.name = name
+                let list = "menu".concat(name)
+                menu.setAttribute("list", list)
+                const datalist_1 = document.createElement("datalist");
+                datalist_1.setAttribute("id", list)
+                const values = ["ISO-8859-1", "cp1252", "utf8"];
+                const option = ["ISO-8859-1", "cp1252", "utf8"];
+                for (let index = 0; index <= values.length; index++) {
+                    const Option = document.createElement("option");
+                    Option.setAttribute("value", values[index])
+                    const text = document.createTextNode(option[index]);
+                    Option.appendChild(text)
+                    datalist_1.appendChild(Option)
+                }
+                const model = document.createElement('input');
+                model.classList.add("form-control");
+                model.placeholder = "Model"
+                let model_name = toString(count)
+                model_name = "carmenu_".concat(model_name)
+                model.name = model_name
+                let model_list = "menu".concat(model_name)
+                model.setAttribute("list", model_list)
+                const datalist_2 = document.createElement("datalist");
+                datalist_2.setAttribute("id", model_list)
+                const model_values = ["ISO-8859-1", "cp1252", "utf8"];
+                const model_option = ["ISO-8859-1", "cp1252", "utf8"];
+                for (let index = 0; index <= model_values.length; index++) {
+                    const model_Option = document.createElement("option");
+                    model_Option.setAttribute("value", model_values[index])
+                    const model_text = document.createTextNode(model_option[index]);
+                    model_Option.appendChild(model_text)
+                    datalist_2.appendChild(model_Option)
+                }
+                const insidediv = document.createElement('div');
+                insidediv.classList.add("form-check");
+                insidediv.classList.add("form-switch");
+                insidediv.classList.add("check_box");
+                const insideinput = document.createElement("input");
+                const insidelabel = document.createElement("label");
+                insideinput.classList.add("form-check-input");
+                insideinput.type = "checkbox";
+                insideinput.setAttribute("role", "switch");
+                const checkid = "flexSwitchCheck".concat(count);
+                const checkname = "carcheck_".concat(count);
+                insideinput.setAttribute("id", checkid);
+                insideinput.name = checkname;
+                insidediv.appendChild(insideinput)
+                insidelabel.classList.add("form-check-label")
+                insidelabel.setAttribute("for", checkid);
+                const checkinsidetext = document.createTextNode("Operable (Runs , Steers and Brakes)")
+                insidelabel.append(checkinsidetext);
+                insidediv.append(insidelabel);
+                let btndiv = document.createElement("div");
+                btndiv.classList.add("d-grid");
+                btndiv.classList.add("gap-2");
+                let btn_btndivinside = document.createElement("button");
+                btn_btndivinside.classList.add("btn");
+                btn_btndivinside.classList.add("btn-outline-dark");
+                btn_btndivinside.setAttribute("onclick", "remove");
+                btn_btndivinside.type = "button";
+                btn_btndivinside.setAttribute("id", "remove".concat(count));
+                const i = document.createElement("i");
+                i.classList.add("bi");
+                i.classList.add("bi-dash");
+                btn_btndivinside.append(i);
+                const removetext = document.createTextNode(" Remove this Vehicle");
+                btn_btndivinside.append(removetext);
+                btndiv.append(btn_btndivinside);
+                const newdiv = document.createElement('div');
+                newdiv.setAttribute("id", "new_".concat(count))
+                newdiv.classList.add('new')
+                newdiv.appendChild(document.createElement("br"))
+                newdiv.appendChild(menu)
+                newdiv.appendChild(datalist_1)
+                newdiv.appendChild(document.createElement("br"))
+                newdiv.appendChild(model)
+                newdiv.appendChild(datalist_2)
+                newdiv.append(insidediv);
+                newdiv.append(btndiv)
+                count++;
+                let main = document.getElementById('new').append(newdiv);
+            } else {
+                alert("Sorry, Only 5 Vehicle Insertion is supported at a time.")
+            }
+        })
+        window.addEventListener('click', function (event) {
+            var id = event.srcElement.id;
+            var newid = id.slice(0, -1);
+            if (newid == "remove") {
+                var index = id.slice(-1);
+                var index_new = "new_".concat(index);
+                var remove_element = document.getElementById(index_new);
+                remove_element.remove();
+                count--;
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
